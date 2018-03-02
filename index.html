@@ -9,7 +9,20 @@
     <title>Psychic Game</title>
 </head>
 <body>
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+	<header><h1>Guess the magic word.</h1></header>
+
+  <form id="hangman">
+    <input type="text" maxlength="1" minlength="1" name="letter" id="letter" placeholder="Guess a letter" />
+    <input id="guess" name="guess" type="submit" value="Guess" />
+    <button id="restart" name="restart" type="button">Restart</button>
+</form>
+<ul id="letters"></ul>
+<p id="man"></p>
+<p id="output" class="output"></p>
+
+
+
+    <script type="text/javascript" src="./assets/javascript/game.js">
     </script>
 </body>
 </html>
